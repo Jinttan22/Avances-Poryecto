@@ -2,7 +2,7 @@
     /*TODO: llamando a cadena Conexion */
     require_once("../config/conexion.php");
     /*TODO: llamando a la clase */
-    require_once("../models/Soacial_Media.php");
+    require_once("../models/Social_media.php");
     /*TODO: llamando a la Clase */
     $social_media = new SocialMedia();
     /*TODO: Opcion de solicitud de controller */
@@ -10,7 +10,7 @@
 
         case "mostrar":
             $datos = $social_media->get_socialMediaXid($_POST["socmed_id"]);
-            if(is_array($datos)==true and count($datos))<>0){
+            if(is_array($datos)==true and count($datos)<>0){
                 foreach($datos as $row){
                     $output["socmed_icono"] = $row["socmed_icono"];
                     $output["socmed_url"] = $row["socmed_url"];
@@ -44,8 +44,8 @@
             $data= Array();
             foreach($datos as $row){
                 $sub_array = array();
-                $sub_array[] = $row[socmed_icono];
-                $sub_array[] = $row[socmed_url];
+                $sub_array[] = $row["socmed_icono"];
+                $sub_array[] = $row["socmed_url"];
 
                 $sub_array[] = '<button type= "button" onClick="editar('.$row["socmed_id"].');"  id=" '.$row["socmed_id"].'"
                 class="btn btn-outline-warning btn-icon"><div><i class="fa fa-edit"></i></div></button>';
