@@ -1,5 +1,5 @@
 <?php
-    class SocialMedia extends Conecta{
+    class SocialMedial extends Conectar{
 
         public function get_socialMedia(){
             $social = parent::conexion();
@@ -9,6 +9,7 @@
             $sql->execute();
             return $resultado=$sql->fetchAll();
         }
+
         public function get_socialMedia_con_parametro($socmed_id){
             $social = parent::conexion();
             parent::set_names();
@@ -18,13 +19,25 @@
             $sql->execute();
             return $resultado=$sql->fetchAll();
         }
-        public function insert_socialMedia($socmed_icoono,$socmed_url){
-            $social = parent::conexioon();
+
+        public function insert_socialMedia($socmed_icono,$socmed_url){
+            $social = parent::conexion();
+            parent::set_names();
+            $sql="INSERT INTO social_media (socmed_id,socmed_icono,socmed_url,est) VALUES(NULL,?,?,1)";
+            $sql=$social->prepare($sql);
+            $sql->bindValue(1,$socmed_id);
+            $sql->bindValue(2,$socmed_url);
+            $sql->execute();
+            return $resultado=$sql->fetchAll();
+        }
+
+        public function update_socialMedia($socmed_id,$socmed_icono,$socmed_url){
+            $social = parent::conexion();
             parent::set_names();
             $sql="UPDATE usuarios
                     SET
                         socmed_icono = ?,
-                        socmed_url = ?,
+                        socmed_url = ?
                     WHERE
                         socmed_id = ?";
             $sql=$social->prepare($sql);
@@ -33,16 +46,17 @@
             $sql->bindValue(3,$socmed_id);
             $sql->execute();
             return $resultado=$sql->fetchAll();
+
         }
-        public function update_socialMedia($socmed_id,$socmed_icono,$socmed_url){
+
+        public function delete_socialMedia($socmed_id){
             $social = parent::conexion();
             parent::set_names();
-            $sql="INSERT social_media (socmed_id, socmed_icono, socmed_url, est) VALUES (NULL,?,?,1)";
+            $sql="UPDATE usuarios SET est = 0 WHERE socmed_id=?";
             $sql=$social->prepare($sql);
-            $sql->bindValue(1, $socmed_icono);
-            $sql->bindValue(2, $socmed_url);
+            $sql->bindValue(1,$socmed_id);
             $sql->execute();
-            return $resultado=$sql->fetAll();
+            return $resultado=$sql->fetchAll();
         }
     }
 ?>
