@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Blank Page</title>
+  <title>AdminLTE 3 | usuarios</title>
 
   <?php
   include_once("modulos/head.php");
@@ -104,7 +104,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="usuarios.php" class="nav-link">
+                <a href="Usuarios.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Usuarios</p>
                 </a>
@@ -152,26 +152,15 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Blank Page</h1>
+            <h1>Usuarios</h1>
           </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Blank Page</li>
-            </ol>
-          </div>
-        </div>
-      </div><!-- /.container-fluid -->
     </section>
 
     <table id="socialMedia_data" class="table display responsive wrap"> 
 <thead>
     <tr>
-    <th class="wd-15p">Usuarios</th>
-    <th class="wd-15p">Redes Sociales</th>
-    <th class="wd-15p">Estudios</th>
-    <th class="wd-15p">Habilidades</th>
-    <th class="wd-15p">Informacion Personal</th>
+    <th class="wd-15p">No se encuentra ningun Usuario Registrado</th>
+
     </tr>
 </thead>
 </table>

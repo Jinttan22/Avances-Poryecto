@@ -38,71 +38,75 @@ if(isset($_SESSION["id"])){
 			<span class="brand-text font-weight-light">Santiago Medina</span>
 		</a>
 
+		
 		<!-- Sidebar -->
 		<?php
 		require_once("modulos/menu.php");
 		?>
 
 			<!-- SidebarSearch Form -->
-			<div class="form-inline">
-				<div class="input-group" data-widget="sidebar-search">
-					<input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-					<div class="input-group-append">
-						<button class="btn btn-sidebar">
-							<i class="fas fa-search fa-fw"></i>
-						</button>
-					</div>
-				</div>
-			</div>
+
 
 			<!-- Sidebar Menu -->
+			
 			<?php
 			require_once("modulos/menu.php");
 			?>
+			
 
-					<li class="nav-item">
-						<a href="#" class="nav-link">
-							<i class="nav-icon fas fa-edit"></i>
-							<p>
-								Forms
-								<i class="fas fa-angle-left right"></i>
-							</p>
-						</a>
-						<ul class="nav nav-treeview">
-							<li class="nav-item">
-								<a href="pages/forms/general.html" class="nav-link">
-									<i class="far fa-circle nav-icon"></i>
-									<p>General Elements</p>
-								</a>
-							</li>
-							<li class="nav-item">
-								<a href="pages/forms/advanced.html" class="nav-link">
-									<i class="far fa-circle nav-icon"></i>
-									<p>Advanced Elements</p>
-								</a>
-							</li>
-							<li class="nav-item">
-								<a href="pages/forms/editors.html" class="nav-link">
-									<i class="far fa-circle nav-icon"></i>
-									<p>Editors</p>
-								</a>
-							</li>
-							<li class="nav-item">
-								<a href="pages/forms/validation.html" class="nav-link">
-									<i class="far fa-circle nav-icon"></i>
-									<p>Validation</p>
-								</a>
-							</li>
-						</ul>
-					</li>
+			<nav class="mt-2">
+        
 
-				</ul>
-			</nav>
-			<!-- /.sidebar-menu -->
-		</div>
-		<!-- /.sidebar -->
-
-	</aside>
+		<li class="nav-item">
+		  <a href="#" class="nav-link">
+			<i class="nav-icon far fa-envelope"></i>
+			<p>
+			  Informacion
+			  <i class="fas fa-angle-left right"></i>
+			</p>
+		  </a>
+		  <ul class="nav nav-treeview">
+			<li class="nav-item">
+			  <a href="usuarios.php" class="nav-link">
+				<i class="far fa-circle nav-icon"></i>
+				<p>Usuarios</p>
+			  </a>
+			</li>
+			<li class="nav-item">
+			  <a href="RedesSociales.php" class="nav-link">
+				<i class="far fa-circle nav-icon"></i>
+				<p>Redes Sociales</p>
+			  </a>
+			</li>
+			<li class="nav-item">
+			  <a href="../mailbox/read-mail.html" class="nav-link">
+				<i class="far fa-circle nav-icon"></i>
+				<p>Estudios</p>
+			  </a>
+			  </li>
+			<li class="nav-item">
+			  <a href="../mailbox/read-mail.html" class="nav-link">
+				<i class="far fa-circle nav-icon"></i>
+				<p>Habilidades</p>
+			  </a>
+			</li>
+			</li>
+			<li class="nav-item">
+			  <a href="../mailbox/read-mail.html" class="nav-link">
+				<i class="far fa-circle nav-icon"></i>
+				<p>Informacion Personal</p>
+			  </a>
+			</li>
+			</li>
+		  </ul>
+		</li>
+		
+	  </ul>
+	</nav>
+	<!-- /.sidebar-menu -->
+  </div>
+  <!-- /.sidebar -->
+</aside>
 
 
 	
