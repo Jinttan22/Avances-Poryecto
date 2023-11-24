@@ -116,5 +116,6 @@ require_once("views/modulos/head.php");
 <?php
 require_once("views/modulos/js.php");
 ?>
+
 </body>
 </html>

@@ -4,7 +4,7 @@ session_start();
         protected $dbh;
         protected function conexion(){
             try{
-                $conectar=$this->dbh=new PDO("mysql:local=localhost;dbhname=proyecto","root","");
+                $conectar=$this->dbh=new PDO("mysql:local=localhost;dbname=siuuu","root","");
                 return $conectar;
             }catch(Exeption $e){
                 print "Conexión fallida". $e->getMessage()."<br>";

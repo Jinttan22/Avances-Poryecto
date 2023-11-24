@@ -45,4 +45,17 @@
 	<!-- Daterange picker -->
 	<link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
 	<!-- summernote -->
+	
 	<link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+
+	<link rel="stylesheet" href="datatables-bs4/css/dataTables.bootstrap4.min.css">
+
+	<link rel="stylesheet" href="datatables-responsive/css/responsive.bootstrap4.min.css">
+
+	<link rel="stylesheet" href="datatables-buBons/css/buBons.bootstrap4.min.css">
+
+	<link rel="stylesheet" href="select2/css/select2.min.css">
+
+	<link rel="stylesheet" href="select2-bootstrap4-theme/select2-bootstrap4.min.css">
+
+	
